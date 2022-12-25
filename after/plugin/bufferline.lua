@@ -16,6 +16,6 @@ bufferline.setup({
 	},
 })
 
-vim.keymap.set("n", "<C-[>", ":bp<CR>")
-vim.keymap.set("n", "<C-]>", ":bn<CR>")
-vim.keymap.set("n", "<C-w>", ":BD<CR>")
+vim.keymap.set("n", "<C-h>", ":bp<CR>")
+vim.keymap.set("n", "<C-l>", ":bn<CR>")
+vim.keymap.set("n", "<C-d>", ":BD<CR>")

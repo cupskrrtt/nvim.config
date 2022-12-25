@@ -19,8 +19,15 @@ keymap.set("i", "jk", "<ESC>")
 keymap.set("n", "ss", ":w<CR>")
 keymap.set("n", "ww", ":q<CR>")
 
---custom terminal keymap
-keymap.set("t", "ww", "<C-\\><C-n>", { noremap = true })
+--window related keymap
+keymap.set("n", "<leader>hs", ":split<CR>", { silent = true })
+keymap.set("n", "<leader>vs", ":vsplit<CR>", { silent = true })
+
+--window movement
+keymap.set("n", "sh", "<C-w>h")
+keymap.set("n", "sj", "<C-w>j")
+keymap.set("n", "sk", "<C-w>k")
+keymap.set("n", "sl", "<C-w>l")
 
 --rest-nvim keymap
 keymap.set("n", "tt", "<Plug>RestNvim<CR>")
